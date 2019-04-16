@@ -1,0 +1,14 @@
+[
+  {
+    "remote":"github",
+    "repository": "omnirom/android_vendor_qcom_opensource_commonsys",
+    "target_path": "vendor/qcom/opensource/commonsys",
+    "revision":"android-9.0"
+  },
+  {
+    "remote":"github",
+    "repository": "xiaomi-classic-dev/android_bootable_recovery",
+    "target_path": "bootable/recovery",
+    "revision":"android-9.0"
+  }
+]
