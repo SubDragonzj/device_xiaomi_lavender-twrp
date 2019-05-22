@@ -74,6 +74,15 @@ TARGET_USERIMAGES_USE_F2FS := true
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 TARGET_COPY_OUT_VENDOR := vendor
 
+# System-as-root
+BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
+
+
+
+# Android Verified Boot
+BOARD_AVB_ENABLE := false
+BOARD_BUILD_DISABLED_VBMETAIMAGE := true
+
 # Recovery
 TARGET_OTA_ASSERT_DEVICE := lavender
 BOARD_HAS_NO_REAL_SDCARD := true
@@ -91,4 +100,6 @@ TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_SCREEN_BLANK_ON_BOOT := true
 TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
+TW_USE_TOOLBOX := true
+TARGET_RECOVERY_FSTAB := device/xiaomi/lavender/recovery/root/etc/recovery.fstab
 PLATFORM_SECURITY_PATCH := 2099-12-31
